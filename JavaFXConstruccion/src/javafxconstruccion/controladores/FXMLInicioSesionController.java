@@ -1,20 +1,15 @@
 package javafxconstruccion.controladores;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafxconstruccion.JavaFXConstruccion;
 import javafxconstruccion.modelo.DAO.SesionDAO;
 import javafxconstruccion.modelo.pojo.Usuario;
 import javafxconstruccion.utils.Constantes;
@@ -31,9 +26,6 @@ public class FXMLInicioSesionController implements Initializable {
     @FXML
     private Label lbErrorPassword;
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -41,13 +33,11 @@ public class FXMLInicioSesionController implements Initializable {
 
     @FXML
     private void clicIniciarSesion(ActionEvent event) {
-        // Notificacion de clic
         lbErrorUsuario.setText("");
         lbErrorPassword.setText("");
         validarCampos();
     }
     
-    // Validar campos
     private void validarCampos(){
         String usuario = tfUsuario.getText();
         String password = tfPassword.getText();
@@ -94,7 +84,6 @@ public class FXMLInicioSesionController implements Initializable {
     
     // Direccionar a pantalla principal
     private void irPantallaPrincipal() {
-            // Para obtener el escenario se utiliza getWindow()
             Stage escenarioBase = (Stage) tfUsuario.getScene().getWindow();
             escenarioBase.setScene(Utilidades.inicializarEscena("vistas/FXMLMain.fxml"));
             escenarioBase.setTitle("Home");
