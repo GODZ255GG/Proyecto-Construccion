@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="1300.0" style="-fx-background-color: #19222B;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxconstruccion.controladores.FXMLMainController">
+   <children>
+      <Pane prefHeight="99.0" prefWidth="1300.0" style="-fx-background-color: #DDD6CC;">
+         <children>
+            <Label fx:id="lbReloj" layoutX="1045.0" layoutY="31.0" prefHeight="28.0" prefWidth="191.0" textFill="#bd9240">
+               <font>
+                  <Font name="Footlight MT Light" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="978.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/clock3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="22.0" layoutY="68.0" text="Usuarios" textFill="#bd9240">
+               <font>
+                  <Font name="Footlight MT Light" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="122.0" layoutY="68.0" text="Anteproyectos" textFill="#bd9240">
+               <font>
+                  <Font name="Footlight MT Light" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="83.0" layoutX="141.0" layoutY="12.0" onMouseClicked="#clicPromociones" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/headhunting.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="278.0" layoutY="12.0" onMouseClicked="#clicReabastecer" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/verificacion-de-antecedentes.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="262.0" layoutY="68.0" text="Actividades" textFill="#bd9240">
+               <font>
+                  <Font name="Footlight MT Light" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="497.0" prefHeight="45.0" prefWidth="1300.0" style="-fx-background-color: #DDD6CC;">
+         <children>
+            <ImageView fitHeight="45.0" fitWidth="49.0" layoutX="1217.0" onMouseClicked="#clicCerrarSesion" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/Salir..png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Label layoutX="517.0" layoutY="192.0" text="Abstergo" textFill="#bd9240">
+         <font>
+            <Font name="Castellar" size="120.0" />
+         </font>
+      </Label>
+      <Label layoutX="532.0" layoutY="326.0" text="Inc." textFill="#bd9240">
+         <font>
+            <Font name="Castellar" size="120.0" />
+         </font>
+      </Label>
+      <Line endX="-100.0" endY="274.0" layoutX="594.0" layoutY="201.0" startX="-100.0" stroke="WHITE" strokeWidth="9.0" />
+      <ImageView fitHeight="57.0" fitWidth="58.0" layoutX="26.0" layoutY="14.0" onMouseClicked="#clicAdminEmpleados" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recursos/empleado.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
